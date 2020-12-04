@@ -1,0 +1,26 @@
+{
+    "name": "craftzing/redemption",
+    "description": "A collection of PHP test utilities we commonly use at Craftzing",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rémi Pelhate",
+            "email": "remi.pelhate@craftzing.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Craftzing\\Redemption\\": "src"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
