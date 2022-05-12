@@ -1,0 +1,10 @@
+parameters:
+	level: 6
+	paths:
+		- src
+	excludePaths:
+	    - ./**/Testing/*
+	    - ./**/*Test.php
+	    - ./**/*TestCase.php
+	    - ./**/Fake*.php
+	checkGenericClassInNonGenericObjectType: false
