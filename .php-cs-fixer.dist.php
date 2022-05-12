@@ -8,7 +8,7 @@ $finder = Symfony\Component\Finder\Finder::create()
 
 return (new PhpCsFixer\Config())
     ->setRules([
-        '@PSR2' => true,
+        '@PHP81Migration' => true,
         'array_syntax' => ['syntax' => 'short'],
         'ordered_imports' => [
             'imports_order' => ['class', 'function', 'const'],

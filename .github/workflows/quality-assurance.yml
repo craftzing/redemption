@@ -34,11 +34,6 @@ jobs:
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
-      - name: "Setup environment file"
-        run: |
-          touch .env
-          echo "POSTMARK_TOKEN=${{ secrets.POSTMARK_TOKEN }}" > .env
-
       - name: "Run tests"
         run: vendor/bin/phpunit --verbose --coverage-clover=coverage.clover
 
